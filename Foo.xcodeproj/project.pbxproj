@@ -12,6 +12,8 @@
 		3A24CDEC2249AA4100902E73 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A24CDEA2249AA4100902E73 /* Main.storyboard */; };
 		3A24CDEE2249AA4300902E73 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A24CDED2249AA4300902E73 /* Assets.xcassets */; };
 		3A24CDF12249AA4300902E73 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A24CDEF2249AA4300902E73 /* LaunchScreen.storyboard */; };
+		52B9E34E22655EDB0097B3E2 /* TodoTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9E34D22655EDB0097B3E2 /* TodoTextCell.swift */; };
+		52B9E350226561100097B3E2 /* Reusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B9E34F226561100097B3E2 /* Reusable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		3A24CDED2249AA4300902E73 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A24CDF02249AA4300902E73 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A24CDF22249AA4300902E73 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52B9E34D22655EDB0097B3E2 /* TodoTextCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoTextCell.swift; sourceTree = "<group>"; };
+		52B9E34F226561100097B3E2 /* Reusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reusable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				3A24CDE62249AA4100902E73 /* AppDelegate.swift */,
 				3A24CDE82249AA4100902E73 /* ViewController.swift */,
+				52B9E34F226561100097B3E2 /* Reusable.swift */,
+				52B9E34D22655EDB0097B3E2 /* TodoTextCell.swift */,
 				3A24CDEA2249AA4100902E73 /* Main.storyboard */,
 				3A24CDED2249AA4300902E73 /* Assets.xcassets */,
 				3A24CDEF2249AA4300902E73 /* LaunchScreen.storyboard */,
@@ -96,6 +102,7 @@
 				TargetAttributes = {
 					3A24CDE22249AA4100902E73 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -135,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52B9E350226561100097B3E2 /* Reusable.swift in Sources */,
+				52B9E34E22655EDB0097B3E2 /* TodoTextCell.swift in Sources */,
 				3A24CDE92249AA4100902E73 /* ViewController.swift in Sources */,
 				3A24CDE72249AA4100902E73 /* AppDelegate.swift in Sources */,
 			);
@@ -290,7 +299,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fooproject.Foo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -307,7 +316,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.fooproject.Foo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
