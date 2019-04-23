@@ -26,22 +26,22 @@
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                     <subviews>
                                         <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="b9y-W3-N7w">
-                                            <rect key="frame" x="0.0" y="0.0" width="329" height="30"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                            <color key="backgroundColor" red="0.23137254900000001" green="0.87843137250000003" blue="0.84705882349999995" alpha="0.22798052226027396" colorSpace="custom" customColorSpace="calibratedRGB"/>
                                             <nil key="textColor"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits"/>
-                                        </textField>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hIG-d9-osp">
-                                            <rect key="frame" x="329" y="0.0" width="46" height="30"/>
-                                            <color key="backgroundColor" red="1" green="0.69112511700000001" blue="0.1338699622" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                            <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                            <state key="normal" title="Button"/>
+                                            <textInputTraits key="textInputTraits" autocorrectionType="yes" enablesReturnKeyAutomatically="YES"/>
                                             <connections>
-                                                <action selector="actionButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iMs-0e-wjj"/>
+                                                <outlet property="delegate" destination="BYZ-38-t0r" id="45i-Pm-y5s"/>
                                             </connections>
-                                        </button>
+                                        </textField>
                                     </subviews>
                                 </stackView>
+                                <view key="tableFooterView" contentMode="scaleToFill" id="hZm-vh-rCf">
+                                    <rect key="frame" x="0.0" y="118" width="375" height="0.0"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </view>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TodoTextCell" id="DT0-R1-K3V" customClass="TodoTextCell" customModule="Foo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="74" width="375" height="44"/>
@@ -54,6 +54,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="BYZ-38-t0r" id="Oev-J5-I69"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5oG-wi-CU6"/>
                                 </connections>
                             </tableView>
                         </subviews>
