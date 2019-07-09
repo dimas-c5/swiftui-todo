@@ -16,12 +16,21 @@ struct ContentView : View {
         List {
             TextField($textInput, placeholder: Text("Add a todo"), onCommit: onCommit)
             ForEach(todos, content: TodoItemView.init)
+                .onDelete(perform: delete)
         }
     }
 
     func onCommit() {
         todos.append(.init(title: textInput))
         textInput = ""
+    }
+
+    func delete(at offsets: IndexSet?) {
+        if let offsets = offsets {
+            offsets.forEach {
+                todos.remove(at: $0)
+            }
+        }
     }
 
 }
