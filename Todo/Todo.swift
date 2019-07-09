@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct Todo: Identifiable {
-    var id: Int
+    var id: UUID = UUID()
 
     let title: String
 }

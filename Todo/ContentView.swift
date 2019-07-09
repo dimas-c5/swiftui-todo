@@ -14,14 +14,14 @@ struct ContentView : View {
 
     var body: some View {
         List {
-            TodoItemView(todo: Todo(id: 1, title: "🚢"))
-            TodoItemView(todo: Todo(id: 1, title: "IT"))
+            TodoItemView(todo: .init(title: "🚢"))
+            TodoItemView(todo: .init(title: "IT"))
         }
     }
 
     func didChange(_ change: Bool) {
         if !change {
-            todos.append(.init(id: todos.count, title: textInput))
+            todos.append(.init(title: textInput))
         }
     }
 
