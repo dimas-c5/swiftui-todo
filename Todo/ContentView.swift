@@ -14,15 +14,14 @@ struct ContentView : View {
 
     var body: some View {
         List {
-            TodoItemView(todo: .init(title: "🚢"))
-            TodoItemView(todo: .init(title: "IT"))
+            TextField($textInput, placeholder: Text("Add a todo"), onCommit: onCommit)
+            ForEach(todos, content: TodoItemView.init)
         }
     }
 
-    func didChange(_ change: Bool) {
-        if !change {
-            todos.append(.init(title: textInput))
-        }
+    func onCommit() {
+        todos.append(.init(title: textInput))
+        textInput = ""
     }
 
 }
