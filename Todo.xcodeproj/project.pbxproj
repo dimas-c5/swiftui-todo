@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		524EEB8C22B9703800CB3DDE /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EEB8B22B9703800CB3DDE /* Todo.swift */; };
+		5279193F22E68F5E00685A49 /* UserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5279193E22E68F5E00685A49 /* UserDefault.swift */; };
 		529F999922CADEF3007B498A /* TodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F999822CADEF3007B498A /* TodoItemView.swift */; };
 		52B4B05E22B862E0002F92C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B05D22B862E0002F92C1 /* AppDelegate.swift */; };
 		52B4B06022B862E0002F92C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B05F22B862E0002F92C1 /* SceneDelegate.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		524EEB8B22B9703800CB3DDE /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
+		5279193E22E68F5E00685A49 /* UserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserDefault.swift; path = ../../../../../../System/Volumes/Data/Users/tk/workspace/c5/Todo/Todo/UserDefault.swift; sourceTree = "<group>"; };
 		529F999822CADEF3007B498A /* TodoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemView.swift; sourceTree = "<group>"; };
 		52B4B05A22B862E0002F92C1 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B4B05D22B862E0002F92C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +65,7 @@
 				52B4B05D22B862E0002F92C1 /* AppDelegate.swift */,
 				52B4B06322B862E4002F92C1 /* Assets.xcassets */,
 				52B4B06122B862E0002F92C1 /* ContentView.swift */,
+				5279193E22E68F5E00685A49 /* UserDefault.swift */,
 				529F999822CADEF3007B498A /* TodoItemView.swift */,
 				52B4B06B22B862E4002F92C1 /* Info.plist */,
 				52B4B06822B862E4002F92C1 /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 			files = (
 				52B4B05E22B862E0002F92C1 /* AppDelegate.swift in Sources */,
 				52B4B06022B862E0002F92C1 /* SceneDelegate.swift in Sources */,
+				5279193F22E68F5E00685A49 /* UserDefault.swift in Sources */,
 				52B4B06222B862E0002F92C1 /* ContentView.swift in Sources */,
 				524EEB8C22B9703800CB3DDE /* Todo.swift in Sources */,
 				529F999922CADEF3007B498A /* TodoItemView.swift in Sources */,
