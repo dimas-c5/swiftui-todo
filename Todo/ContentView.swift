@@ -10,25 +10,25 @@ import SwiftUI
 
 struct ContentView : View {
     @State var textInput = ""
-    @State var todos = [Todo]()
+    @ObservedObject var state: AppState
 
     var body: some View {
         List {
             TextField("Add a todo", text: $textInput, onEditingChanged: {_ in}, onCommit: onCommit)
-            ForEach(todos, content: TodoItemView.init)
+             ForEach(state.todos, content: TodoItemView.init)
                 .onDelete(perform: delete)
         }
     }
 
     func onCommit() {
-        todos.append(.init(title: textInput))
+        state.todos.append(.init(title: textInput))
         textInput = ""
     }
 
     func delete(at offsets: IndexSet?) {
         if let offsets = offsets {
             offsets.forEach {
-                todos.remove(at: $0)
+                state.todos.remove(at: $0)
             }
         }
     }
@@ -38,7 +38,7 @@ struct ContentView : View {
 #if DEBUG
 struct ContentView_Previews : PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(state: AppState())
     }
 }
 #endif
