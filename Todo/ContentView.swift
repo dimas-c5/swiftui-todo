@@ -14,7 +14,7 @@ struct ContentView : View {
 
     var body: some View {
         List {
-            TextField($textInput, placeholder: Text("Add a todo"), onCommit: onCommit)
+            TextField("Add a todo", text: $textInput, onEditingChanged: {_ in}, onCommit: onCommit)
             ForEach(todos, content: TodoItemView.init)
                 .onDelete(perform: delete)
         }
