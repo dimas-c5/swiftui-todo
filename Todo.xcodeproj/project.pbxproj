@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		52B4B06422B862E4002F92C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B4B06322B862E4002F92C1 /* Assets.xcassets */; };
 		52B4B06722B862E4002F92C1 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52B4B06622B862E4002F92C1 /* Preview Assets.xcassets */; };
 		52B4B06A22B862E4002F92C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B4B06822B862E4002F92C1 /* LaunchScreen.storyboard */; };
+		52F5C37223023D490055C563 /* GRDB in Frameworks */ = {isa = PBXBuildFile; productRef = 52F5C37123023D490055C563 /* GRDB */; };
+		52F5C37423023F230055C563 /* AppDatabase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F5C37323023F230055C563 /* AppDatabase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,7 @@
 		52B4B06622B862E4002F92C1 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		52B4B06922B862E4002F92C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		52B4B06B22B862E4002F92C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52F5C37323023F230055C563 /* AppDatabase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDatabase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F5C37223023D490055C563 /* GRDB in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +68,7 @@
 			children = (
 				5263877E22F9071D00649336 /* AppState.swift */,
 				52B4B05D22B862E0002F92C1 /* AppDelegate.swift */,
+				52F5C37323023F230055C563 /* AppDatabase.swift */,
 				52B4B06322B862E4002F92C1 /* Assets.xcassets */,
 				52B4B06122B862E0002F92C1 /* ContentView.swift */,
 				529F999822CADEF3007B498A /* TodoItemView.swift */,
@@ -100,6 +105,9 @@
 			dependencies = (
 			);
 			name = Todo;
+			packageProductDependencies = (
+				52F5C37123023D490055C563 /* GRDB */,
+			);
 			productName = Todo;
 			productReference = 52B4B05A22B862E0002F92C1 /* Todo.app */;
 			productType = "com.apple.product-type.application";
@@ -128,6 +136,10 @@
 				Base,
 			);
 			mainGroup = 52B4B05122B862E0002F92C1;
+			packageReferences = (
+				52F5C36F23023D010055C563 /* XCRemoteSwiftPackageReference "CSQLite" */,
+				52F5C37023023D490055C563 /* XCRemoteSwiftPackageReference "GRDB.swift" */,
+			);
 			productRefGroup = 52B4B05B22B862E0002F92C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -158,6 +170,7 @@
 				52B4B05E22B862E0002F92C1 /* AppDelegate.swift in Sources */,
 				52B4B06022B862E0002F92C1 /* SceneDelegate.swift in Sources */,
 				52B4B06222B862E0002F92C1 /* ContentView.swift in Sources */,
+				52F5C37423023F230055C563 /* AppDatabase.swift in Sources */,
 				5263877F22F9071D00649336 /* AppState.swift in Sources */,
 				524EEB8C22B9703800CB3DDE /* Todo.swift in Sources */,
 				529F999922CADEF3007B498A /* TodoItemView.swift in Sources */,
@@ -358,6 +371,33 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		52F5C36F23023D010055C563 /* XCRemoteSwiftPackageReference "CSQLite" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:groue/CSQLite.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+		52F5C37023023D490055C563 /* XCRemoteSwiftPackageReference "GRDB.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "git@github.com:groue/GRDB.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		52F5C37123023D490055C563 /* GRDB */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 52F5C37023023D490055C563 /* XCRemoteSwiftPackageReference "GRDB.swift" */;
+			productName = GRDB;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 52B4B05222B862E0002F92C1 /* Project object */;
 }
