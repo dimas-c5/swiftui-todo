@@ -1,5 +1,4 @@
-import Combine
-
-class AppState: ObservableObject {
-    @Published var todos = [Todo]()
+struct AppState {
+    var textInput: String = ""
+    var todos: [String] = []
 }
