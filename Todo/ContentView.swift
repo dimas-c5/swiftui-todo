@@ -1,45 +1,16 @@
-//
-//  ContentView.swift
-//  Todo
-//
-//  Created by Tim Kersey on 6/17/19.
-//  Copyright © 2019 Tim Kersey. All rights reserved.
-//
-
 import SwiftUI
+import AddTodo
+import ComposableArchitecture
+import Todos
 
 struct ContentView : View {
-    @State var textInput = ""
-    @ObservedObject var state: AppState
+    @ObservedObject var store: Store<AppState, AppAction>
 
     var body: some View {
-        List {
-            TextField("Add a todo", text: $textInput, onEditingChanged: {_ in}, onCommit: onCommit)
-             ForEach(state.todos, content: TodoItemView.init)
-                .onDelete(perform: delete)
+        VStack {
+            AddTodo(store: store.view(value: ^\.textInput, action: AppAction.addTodo))
+                .padding(.leading, 20)
+            Todos(store: store.view(value: ^\.todos, action: AppAction.todos))
         }
     }
-
-    func onCommit() {
-        state.todos.append(.init(title: textInput))
-        textInput = ""
-    }
-
-    func delete(at offsets: IndexSet?) {
-        if let offsets = offsets {
-            offsets.forEach {
-                state.todos.remove(at: $0)
-            }
-        }
-    }
-
 }
-
-#if DEBUG
-struct ContentView_Previews : PreviewProvider {
-    static var previews: some View {
-        ContentView(state: AppState())
-    }
-}
-#endif
- 
