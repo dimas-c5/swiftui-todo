@@ -15,17 +15,19 @@
 		52195940235E8BD7006E3EA4 /* Todos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52195939235E8BD7006E3EA4 /* Todos.framework */; };
 		52195941235E8BD7006E3EA4 /* Todos.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52195939235E8BD7006E3EA4 /* Todos.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		52195946235E8BEB006E3EA4 /* Todos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52195945235E8BEB006E3EA4 /* Todos.swift */; };
-		521A3DCE238CD2E300D4D412 /* AddTodo.h in Headers */ = {isa = PBXBuildFile; fileRef = 521A3DCC238CD2E300D4D412 /* AddTodo.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		521A3DD1238CD2E300D4D412 /* AddTodo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 521A3DCA238CD2E300D4D412 /* AddTodo.framework */; };
-		521A3DD2238CD2E300D4D412 /* AddTodo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 521A3DCA238CD2E300D4D412 /* AddTodo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		521A3DD9238CD31800D4D412 /* AddTodo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A3DD8238CD31800D4D412 /* AddTodo.swift */; };
-		521A3DDB238CD33700D4D412 /* AddTodoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A3DDA238CD33700D4D412 /* AddTodoAction.swift */; };
 		524EEB8C22B9703800CB3DDE /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EEB8B22B9703800CB3DDE /* Todo.swift */; };
 		5263877F22F9071D00649336 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263877E22F9071D00649336 /* AppState.swift */; };
 		5291612623C53339001B9911 /* Prelude.h in Headers */ = {isa = PBXBuildFile; fileRef = 5291612423C53339001B9911 /* Prelude.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5291612923C53339001B9911 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5291612223C53339001B9911 /* Prelude.framework */; };
 		5291612A23C53339001B9911 /* Prelude.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5291612223C53339001B9911 /* Prelude.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5291612E23C5334A001B9911 /* Prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5B9AA238383F10030EBAF /* Prelude.swift */; };
+		5291613823C53478001B9911 /* Add.h in Headers */ = {isa = PBXBuildFile; fileRef = 5291613623C53478001B9911 /* Add.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5291613B23C53478001B9911 /* Add.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5291613423C53478001B9911 /* Add.framework */; };
+		5291613C23C53478001B9911 /* Add.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5291613423C53478001B9911 /* Add.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5291614023C53491001B9911 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A3DD8238CD31800D4D412 /* Add.swift */; };
+		5291614123C53491001B9911 /* AddAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A3DDA238CD33700D4D412 /* AddAction.swift */; };
+		5291614323C5350A001B9911 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52195924235E8596006E3EA4 /* ComposableArchitecture.framework */; };
+		5291614423C5350A001B9911 /* ComposableArchitecture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52195924235E8596006E3EA4 /* ComposableArchitecture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		529F999922CADEF3007B498A /* TodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F999822CADEF3007B498A /* TodoItemView.swift */; };
 		52B4B05E22B862E0002F92C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B05D22B862E0002F92C1 /* AppDelegate.swift */; };
 		52B4B06022B862E0002F92C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B05F22B862E0002F92C1 /* SceneDelegate.swift */; };
@@ -54,20 +56,6 @@
 			remoteGlobalIDString = 52195938235E8BD7006E3EA4;
 			remoteInfo = Todos;
 		};
-		521A3DCF238CD2E300D4D412 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 521A3DC9238CD2E300D4D412;
-			remoteInfo = AddTodo;
-		};
-		521A3DD6238CD2FE00D4D412 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 52195923235E8596006E3EA4;
-			remoteInfo = ComposableArchitecture;
-		};
 		5284A109238CB7A300C427AB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
@@ -82,6 +70,20 @@
 			remoteGlobalIDString = 5291612123C53339001B9911;
 			remoteInfo = Prelude;
 		};
+		5291613923C53478001B9911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5291613323C53478001B9911;
+			remoteInfo = Add;
+		};
+		5291614523C5350A001B9911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52195923235E8596006E3EA4;
+			remoteInfo = ComposableArchitecture;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -92,9 +94,20 @@
 			dstSubfolderSpec = 10;
 			files = (
 				52195941235E8BD7006E3EA4 /* Todos.framework in Embed Frameworks */,
-				521A3DD2238CD2E300D4D412 /* AddTodo.framework in Embed Frameworks */,
+				5291613C23C53478001B9911 /* Add.framework in Embed Frameworks */,
 				5291612A23C53339001B9911 /* Prelude.framework in Embed Frameworks */,
 				5219592C235E8596006E3EA4 /* ComposableArchitecture.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5291614723C5350A001B9911 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5291614423C5350A001B9911 /* ComposableArchitecture.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -110,16 +123,16 @@
 		5219593B235E8BD7006E3EA4 /* Todos.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Todos.h; sourceTree = "<group>"; };
 		5219593C235E8BD7006E3EA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52195945235E8BEB006E3EA4 /* Todos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todos.swift; sourceTree = "<group>"; };
-		521A3DCA238CD2E300D4D412 /* AddTodo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AddTodo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		521A3DCC238CD2E300D4D412 /* AddTodo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AddTodo.h; sourceTree = "<group>"; };
-		521A3DCD238CD2E300D4D412 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		521A3DD8238CD31800D4D412 /* AddTodo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodo.swift; sourceTree = "<group>"; };
-		521A3DDA238CD33700D4D412 /* AddTodoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoAction.swift; sourceTree = "<group>"; };
+		521A3DD8238CD31800D4D412 /* Add.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Add.swift; sourceTree = "<group>"; };
+		521A3DDA238CD33700D4D412 /* AddAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAction.swift; sourceTree = "<group>"; };
 		524EEB8B22B9703800CB3DDE /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		5263877E22F9071D00649336 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		5291612223C53339001B9911 /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5291612423C53339001B9911 /* Prelude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prelude.h; sourceTree = "<group>"; };
 		5291612523C53339001B9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5291613423C53478001B9911 /* Add.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Add.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5291613623C53478001B9911 /* Add.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Add.h; sourceTree = "<group>"; };
+		5291613723C53478001B9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		529F999822CADEF3007B498A /* TodoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemView.swift; sourceTree = "<group>"; };
 		52B4B05A22B862E0002F92C1 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B4B05D22B862E0002F92C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -151,17 +164,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		521A3DC7238CD2E300D4D412 /* Frameworks */ = {
+		5291611F23C53339001B9911 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5291611F23C53339001B9911 /* Frameworks */ = {
+		5291613123C53478001B9911 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5291614323C5350A001B9911 /* ComposableArchitecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,7 +184,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				52195940235E8BD7006E3EA4 /* Todos.framework in Frameworks */,
-				521A3DD1238CD2E300D4D412 /* AddTodo.framework in Frameworks */,
+				5291613B23C53478001B9911 /* Add.framework in Frameworks */,
 				5291612923C53339001B9911 /* Prelude.framework in Frameworks */,
 				5219592B235E8596006E3EA4 /* ComposableArchitecture.framework in Frameworks */,
 			);
@@ -201,17 +215,6 @@
 			path = Todos;
 			sourceTree = "<group>";
 		};
-		521A3DCB238CD2E300D4D412 /* AddTodo */ = {
-			isa = PBXGroup;
-			children = (
-				521A3DCC238CD2E300D4D412 /* AddTodo.h */,
-				521A3DD8238CD31800D4D412 /* AddTodo.swift */,
-				521A3DDA238CD33700D4D412 /* AddTodoAction.swift */,
-				521A3DCD238CD2E300D4D412 /* Info.plist */,
-			);
-			path = AddTodo;
-			sourceTree = "<group>";
-		};
 		5291612323C53339001B9911 /* Prelude */ = {
 			isa = PBXGroup;
 			children = (
@@ -222,15 +225,34 @@
 			path = Prelude;
 			sourceTree = "<group>";
 		};
+		5291613523C53478001B9911 /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				5291613623C53478001B9911 /* Add.h */,
+				521A3DD8238CD31800D4D412 /* Add.swift */,
+				521A3DDA238CD33700D4D412 /* AddAction.swift */,
+				5291613723C53478001B9911 /* Info.plist */,
+			);
+			path = Add;
+			sourceTree = "<group>";
+		};
+		5291614223C5350A001B9911 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		52B4B05122B862E0002F92C1 = {
 			isa = PBXGroup;
 			children = (
-				521A3DCB238CD2E300D4D412 /* AddTodo */,
+				5291613523C53478001B9911 /* Add */,
 				52195925235E8596006E3EA4 /* ComposableArchitecture */,
 				5291612323C53339001B9911 /* Prelude */,
 				52B4B05B22B862E0002F92C1 /* Products */,
 				52B4B05C22B862E0002F92C1 /* Todo */,
 				5219593A235E8BD7006E3EA4 /* Todos */,
+				5291614223C5350A001B9911 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -240,8 +262,8 @@
 				52B4B05A22B862E0002F92C1 /* Todo.app */,
 				52195924235E8596006E3EA4 /* ComposableArchitecture.framework */,
 				52195939235E8BD7006E3EA4 /* Todos.framework */,
-				521A3DCA238CD2E300D4D412 /* AddTodo.framework */,
 				5291612223C53339001B9911 /* Prelude.framework */,
+				5291613423C53478001B9911 /* Add.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -292,19 +314,19 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		521A3DC5238CD2E300D4D412 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				521A3DCE238CD2E300D4D412 /* AddTodo.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5291611D23C53339001B9911 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5291612623C53339001B9911 /* Prelude.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5291612F23C53478001B9911 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5291613823C53478001B9911 /* Add.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -348,25 +370,6 @@
 			productReference = 52195939235E8BD7006E3EA4 /* Todos.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		521A3DC9238CD2E300D4D412 /* AddTodo */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 521A3DD3238CD2E300D4D412 /* Build configuration list for PBXNativeTarget "AddTodo" */;
-			buildPhases = (
-				521A3DC5238CD2E300D4D412 /* Headers */,
-				521A3DC6238CD2E300D4D412 /* Sources */,
-				521A3DC7238CD2E300D4D412 /* Frameworks */,
-				521A3DC8238CD2E300D4D412 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				521A3DD7238CD2FE00D4D412 /* PBXTargetDependency */,
-			);
-			name = AddTodo;
-			productName = AddTodo;
-			productReference = 521A3DCA238CD2E300D4D412 /* AddTodo.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		5291612123C53339001B9911 /* Prelude */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5291612B23C53339001B9911 /* Build configuration list for PBXNativeTarget "Prelude" */;
@@ -385,6 +388,26 @@
 			productReference = 5291612223C53339001B9911 /* Prelude.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5291613323C53478001B9911 /* Add */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5291613D23C53478001B9911 /* Build configuration list for PBXNativeTarget "Add" */;
+			buildPhases = (
+				5291612F23C53478001B9911 /* Headers */,
+				5291613023C53478001B9911 /* Sources */,
+				5291613123C53478001B9911 /* Frameworks */,
+				5291613223C53478001B9911 /* Resources */,
+				5291614723C5350A001B9911 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5291614623C5350A001B9911 /* PBXTargetDependency */,
+			);
+			name = Add;
+			productName = Add;
+			productReference = 5291613423C53478001B9911 /* Add.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		52B4B05922B862E0002F92C1 /* Todo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52B4B06E22B862E4002F92C1 /* Build configuration list for PBXNativeTarget "Todo" */;
@@ -399,8 +422,8 @@
 			dependencies = (
 				5219592A235E8596006E3EA4 /* PBXTargetDependency */,
 				5219593F235E8BD7006E3EA4 /* PBXTargetDependency */,
-				521A3DD0238CD2E300D4D412 /* PBXTargetDependency */,
 				5291612823C53339001B9911 /* PBXTargetDependency */,
+				5291613A23C53478001B9911 /* PBXTargetDependency */,
 			);
 			name = Todo;
 			productName = Todo;
@@ -425,11 +448,10 @@
 						CreatedOnToolsVersion = 11.2;
 						LastSwiftMigration = 1120;
 					};
-					521A3DC9238CD2E300D4D412 = {
-						CreatedOnToolsVersion = 11.2.1;
-						LastSwiftMigration = 1120;
-					};
 					5291612123C53339001B9911 = {
+						CreatedOnToolsVersion = 11.3;
+					};
+					5291613323C53478001B9911 = {
 						CreatedOnToolsVersion = 11.3;
 					};
 					52B4B05922B862E0002F92C1 = {
@@ -451,7 +473,7 @@
 			projectRoot = "";
 			targets = (
 				52B4B05922B862E0002F92C1 /* Todo */,
-				521A3DC9238CD2E300D4D412 /* AddTodo */,
+				5291613323C53478001B9911 /* Add */,
 				52195923235E8596006E3EA4 /* ComposableArchitecture */,
 				52195938235E8BD7006E3EA4 /* Todos */,
 				5291612123C53339001B9911 /* Prelude */,
@@ -474,14 +496,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		521A3DC8238CD2E300D4D412 /* Resources */ = {
+		5291612023C53339001B9911 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5291612023C53339001B9911 /* Resources */ = {
+		5291613223C53478001B9911 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -519,20 +541,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		521A3DC6238CD2E300D4D412 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				521A3DD9238CD31800D4D412 /* AddTodo.swift in Sources */,
-				521A3DDB238CD33700D4D412 /* AddTodoAction.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5291611E23C53339001B9911 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				5291612E23C5334A001B9911 /* Prelude.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5291613023C53478001B9911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5291614023C53491001B9911 /* Add.swift in Sources */,
+				5291614123C53491001B9911 /* AddAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -564,16 +586,6 @@
 			target = 52195938235E8BD7006E3EA4 /* Todos */;
 			targetProxy = 5219593E235E8BD7006E3EA4 /* PBXContainerItemProxy */;
 		};
-		521A3DD0238CD2E300D4D412 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 521A3DC9238CD2E300D4D412 /* AddTodo */;
-			targetProxy = 521A3DCF238CD2E300D4D412 /* PBXContainerItemProxy */;
-		};
-		521A3DD7238CD2FE00D4D412 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 52195923235E8596006E3EA4 /* ComposableArchitecture */;
-			targetProxy = 521A3DD6238CD2FE00D4D412 /* PBXContainerItemProxy */;
-		};
 		5284A10A238CB7A300C427AB /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 52195923235E8596006E3EA4 /* ComposableArchitecture */;
@@ -583,6 +595,16 @@
 			isa = PBXTargetDependency;
 			target = 5291612123C53339001B9911 /* Prelude */;
 			targetProxy = 5291612723C53339001B9911 /* PBXContainerItemProxy */;
+		};
+		5291613A23C53478001B9911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5291613323C53478001B9911 /* Add */;
+			targetProxy = 5291613923C53478001B9911 /* PBXContainerItemProxy */;
+		};
+		5291614623C5350A001B9911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52195923235E8596006E3EA4 /* ComposableArchitecture */;
+			targetProxy = 5291614523C5350A001B9911 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -606,6 +628,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DEVELOPMENT_TEAM = 78NNNKRM7Q;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -621,6 +644,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.carbonfive.ComposableArchitecture;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -637,6 +661,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = NO;
 				DEVELOPMENT_TEAM = 78NNNKRM7Q;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
@@ -652,6 +677,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.carbonfive.ComposableArchitecture;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -720,67 +746,6 @@
 			};
 			name = Release;
 		};
-		521A3DD4238CD2E300D4D412 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 78NNNKRM7Q;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AddTodo/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carbonfive.AddTodo;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		521A3DD5238CD2E300D4D412 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 78NNNKRM7Q;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = AddTodo/Info.plist;
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.carbonfive.AddTodo;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 		5291612C23C53339001B9911 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -830,6 +795,64 @@
 					"@loader_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "im.k-t.Prelude";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5291613E23C53478001B9911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 78NNNKRM7Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Add/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "im.k-t.Add";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5291613F23C53478001B9911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 78NNNKRM7Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Add/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "im.k-t.Add";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -1022,20 +1045,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		521A3DD3238CD2E300D4D412 /* Build configuration list for PBXNativeTarget "AddTodo" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				521A3DD4238CD2E300D4D412 /* Debug */,
-				521A3DD5238CD2E300D4D412 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5291612B23C53339001B9911 /* Build configuration list for PBXNativeTarget "Prelude" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5291612C23C53339001B9911 /* Debug */,
 				5291612D23C53339001B9911 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5291613D23C53478001B9911 /* Build configuration list for PBXNativeTarget "Add" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5291613E23C53478001B9911 /* Debug */,
+				5291613F23C53478001B9911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

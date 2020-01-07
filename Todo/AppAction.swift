@@ -1,23 +1,23 @@
-import AddTodo
+import Add
 import Todos
 
 enum AppAction {
-    case addTodo(AddTodoAction)
+    case add(AddAction)
     case todos(TodosAction)
 }
 
 extension AppAction {
-    var addTodo: AddTodoAction? {
+    var add: AddAction? {
         get {
-            guard case let .addTodo(action) = self else {
+            guard case let .add(action) = self else {
                 return nil
             }
             return action
         }
 
         set {
-            guard case .addTodo = self, let newValue = newValue else { return }
-            self = .addTodo(newValue)
+            guard case .add = self, let newValue = newValue else { return }
+            self = .add(newValue)
         }
     }
 }

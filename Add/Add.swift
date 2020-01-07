@@ -1,11 +1,11 @@
 import ComposableArchitecture
 import SwiftUI
 
-public struct AddTodo: View {
+public struct Add: View {
     @State var textInput = ""
-    @ObservedObject var store: Store<String, AddTodoAction>
+    @ObservedObject var store: Store<String, AddAction>
 
-    public init(store: Store<String, AddTodoAction>) {
+    public init(store: Store<String, AddAction>) {
         self.store = store
     }
 
@@ -14,7 +14,7 @@ public struct AddTodo: View {
     }
 }
 
-extension AddTodo {
+extension Add {
     func onCommit() -> Void {
         store.send(.add(textInput))
         textInput = ""

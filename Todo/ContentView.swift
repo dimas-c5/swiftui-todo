@@ -1,5 +1,5 @@
 import SwiftUI
-import AddTodo
+import Add
 import ComposableArchitecture
 import Todos
 import Prelude
@@ -9,7 +9,7 @@ struct ContentView : View {
 
     var body: some View {
         VStack {
-            AddTodo(store: store.view(value: ^\.textInput, action: AppAction.addTodo))
+            Add(store: store.view(value: ^\.textInput, action: AppAction.add))
                 .padding(.leading, 20)
             Todos(store: store.view(value: ^\.todos, action: AppAction.todos))
         }
