@@ -22,7 +22,10 @@
 		521A3DDB238CD33700D4D412 /* AddTodoAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A3DDA238CD33700D4D412 /* AddTodoAction.swift */; };
 		524EEB8C22B9703800CB3DDE /* Todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524EEB8B22B9703800CB3DDE /* Todo.swift */; };
 		5263877F22F9071D00649336 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5263877E22F9071D00649336 /* AppState.swift */; };
-		5284A10D238CB9B000C427AB /* Functional.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5B9AA238383F10030EBAF /* Functional.swift */; };
+		5291612623C53339001B9911 /* Prelude.h in Headers */ = {isa = PBXBuildFile; fileRef = 5291612423C53339001B9911 /* Prelude.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5291612923C53339001B9911 /* Prelude.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5291612223C53339001B9911 /* Prelude.framework */; };
+		5291612A23C53339001B9911 /* Prelude.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5291612223C53339001B9911 /* Prelude.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5291612E23C5334A001B9911 /* Prelude.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5B9AA238383F10030EBAF /* Prelude.swift */; };
 		529F999922CADEF3007B498A /* TodoItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529F999822CADEF3007B498A /* TodoItemView.swift */; };
 		52B4B05E22B862E0002F92C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B05D22B862E0002F92C1 /* AppDelegate.swift */; };
 		52B4B06022B862E0002F92C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B05F22B862E0002F92C1 /* SceneDelegate.swift */; };
@@ -32,7 +35,6 @@
 		52B4B06A22B862E4002F92C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52B4B06822B862E4002F92C1 /* LaunchScreen.storyboard */; };
 		52D5B9A023837D9E0030EBAF /* AppAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5B99F23837D9E0030EBAF /* AppAction.swift */; };
 		52D5B9A323837F7C0030EBAF /* TodosAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5B9A223837F7C0030EBAF /* TodosAction.swift */; };
-		52D5B9A5238382600030EBAF /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5B9A4238382600030EBAF /* Util.swift */; };
 		52D5B9A72383829A0030EBAF /* AppReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5B9A62383829A0030EBAF /* AppReducer.swift */; };
 		52D5B9A9238382EC0030EBAF /* TodosReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5B9A8238382EC0030EBAF /* TodosReducer.swift */; };
 /* End PBXBuildFile section */
@@ -73,6 +75,13 @@
 			remoteGlobalIDString = 52195923235E8596006E3EA4;
 			remoteInfo = ComposableArchitecture;
 		};
+		5291612723C53339001B9911 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5291612123C53339001B9911;
+			remoteInfo = Prelude;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -84,6 +93,7 @@
 			files = (
 				52195941235E8BD7006E3EA4 /* Todos.framework in Embed Frameworks */,
 				521A3DD2238CD2E300D4D412 /* AddTodo.framework in Embed Frameworks */,
+				5291612A23C53339001B9911 /* Prelude.framework in Embed Frameworks */,
 				5219592C235E8596006E3EA4 /* ComposableArchitecture.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
@@ -107,6 +117,9 @@
 		521A3DDA238CD33700D4D412 /* AddTodoAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTodoAction.swift; sourceTree = "<group>"; };
 		524EEB8B22B9703800CB3DDE /* Todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Todo.swift; sourceTree = "<group>"; };
 		5263877E22F9071D00649336 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		5291612223C53339001B9911 /* Prelude.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Prelude.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5291612423C53339001B9911 /* Prelude.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Prelude.h; sourceTree = "<group>"; };
+		5291612523C53339001B9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		529F999822CADEF3007B498A /* TodoItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoItemView.swift; sourceTree = "<group>"; };
 		52B4B05A22B862E0002F92C1 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B4B05D22B862E0002F92C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -118,10 +131,9 @@
 		52B4B06B22B862E4002F92C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		52D5B99F23837D9E0030EBAF /* AppAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppAction.swift; sourceTree = "<group>"; };
 		52D5B9A223837F7C0030EBAF /* TodosAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosAction.swift; sourceTree = "<group>"; };
-		52D5B9A4238382600030EBAF /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		52D5B9A62383829A0030EBAF /* AppReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppReducer.swift; sourceTree = "<group>"; };
 		52D5B9A8238382EC0030EBAF /* TodosReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodosReducer.swift; sourceTree = "<group>"; };
-		52D5B9AA238383F10030EBAF /* Functional.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Functional.swift; sourceTree = "<group>"; };
+		52D5B9AA238383F10030EBAF /* Prelude.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Prelude.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,12 +158,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5291611F23C53339001B9911 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52B4B05722B862E0002F92C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				52195940235E8BD7006E3EA4 /* Todos.framework in Frameworks */,
 				521A3DD1238CD2E300D4D412 /* AddTodo.framework in Frameworks */,
+				5291612923C53339001B9911 /* Prelude.framework in Frameworks */,
 				5219592B235E8596006E3EA4 /* ComposableArchitecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +185,6 @@
 				52195926235E8596006E3EA4 /* ComposableArchitecture.h */,
 				52195927235E8596006E3EA4 /* Info.plist */,
 				52195931235E8630006E3EA4 /* ComposableArchitecture.swift */,
-				52D5B9AA238383F10030EBAF /* Functional.swift */,
 			);
 			path = ComposableArchitecture;
 			sourceTree = "<group>";
@@ -193,6 +212,16 @@
 			path = AddTodo;
 			sourceTree = "<group>";
 		};
+		5291612323C53339001B9911 /* Prelude */ = {
+			isa = PBXGroup;
+			children = (
+				5291612523C53339001B9911 /* Info.plist */,
+				5291612423C53339001B9911 /* Prelude.h */,
+				52D5B9AA238383F10030EBAF /* Prelude.swift */,
+			);
+			path = Prelude;
+			sourceTree = "<group>";
+		};
 		52B4B05122B862E0002F92C1 = {
 			isa = PBXGroup;
 			children = (
@@ -200,6 +229,7 @@
 				52195925235E8596006E3EA4 /* ComposableArchitecture */,
 				5219593A235E8BD7006E3EA4 /* Todos */,
 				521A3DCB238CD2E300D4D412 /* AddTodo */,
+				5291612323C53339001B9911 /* Prelude */,
 				52B4B05B22B862E0002F92C1 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -211,6 +241,7 @@
 				52195924235E8596006E3EA4 /* ComposableArchitecture.framework */,
 				52195939235E8BD7006E3EA4 /* Todos.framework */,
 				521A3DCA238CD2E300D4D412 /* AddTodo.framework */,
+				5291612223C53339001B9911 /* Prelude.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -230,7 +261,6 @@
 				52B4B05F22B862E0002F92C1 /* SceneDelegate.swift */,
 				524EEB8B22B9703800CB3DDE /* Todo.swift */,
 				529F999822CADEF3007B498A /* TodoItemView.swift */,
-				52D5B9A4238382600030EBAF /* Util.swift */,
 			);
 			path = Todo;
 			sourceTree = "<group>";
@@ -267,6 +297,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				521A3DCE238CD2E300D4D412 /* AddTodo.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5291611D23C53339001B9911 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5291612623C53339001B9911 /* Prelude.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -329,6 +367,24 @@
 			productReference = 521A3DCA238CD2E300D4D412 /* AddTodo.framework */;
 			productType = "com.apple.product-type.framework";
 		};
+		5291612123C53339001B9911 /* Prelude */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5291612B23C53339001B9911 /* Build configuration list for PBXNativeTarget "Prelude" */;
+			buildPhases = (
+				5291611D23C53339001B9911 /* Headers */,
+				5291611E23C53339001B9911 /* Sources */,
+				5291611F23C53339001B9911 /* Frameworks */,
+				5291612023C53339001B9911 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Prelude;
+			productName = Prelude;
+			productReference = 5291612223C53339001B9911 /* Prelude.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		52B4B05922B862E0002F92C1 /* Todo */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 52B4B06E22B862E4002F92C1 /* Build configuration list for PBXNativeTarget "Todo" */;
@@ -344,6 +400,7 @@
 				5219592A235E8596006E3EA4 /* PBXTargetDependency */,
 				5219593F235E8BD7006E3EA4 /* PBXTargetDependency */,
 				521A3DD0238CD2E300D4D412 /* PBXTargetDependency */,
+				5291612823C53339001B9911 /* PBXTargetDependency */,
 			);
 			name = Todo;
 			productName = Todo;
@@ -372,6 +429,9 @@
 						CreatedOnToolsVersion = 11.2.1;
 						LastSwiftMigration = 1120;
 					};
+					5291612123C53339001B9911 = {
+						CreatedOnToolsVersion = 11.3;
+					};
 					52B4B05922B862E0002F92C1 = {
 						CreatedOnToolsVersion = 11.0;
 					};
@@ -394,6 +454,7 @@
 				521A3DC9238CD2E300D4D412 /* AddTodo */,
 				52195923235E8596006E3EA4 /* ComposableArchitecture */,
 				52195938235E8BD7006E3EA4 /* Todos */,
+				5291612123C53339001B9911 /* Prelude */,
 			);
 		};
 /* End PBXProject section */
@@ -420,6 +481,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5291612023C53339001B9911 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52B4B05822B862E0002F92C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,7 +505,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5284A10D238CB9B000C427AB /* Functional.swift in Sources */,
 				52195932235E8630006E3EA4 /* ComposableArchitecture.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,6 +528,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5291611E23C53339001B9911 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5291612E23C5334A001B9911 /* Prelude.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		52B4B05622B862E0002F92C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -469,7 +544,6 @@
 				52B4B05E22B862E0002F92C1 /* AppDelegate.swift in Sources */,
 				52B4B06022B862E0002F92C1 /* SceneDelegate.swift in Sources */,
 				52D5B9A72383829A0030EBAF /* AppReducer.swift in Sources */,
-				52D5B9A5238382600030EBAF /* Util.swift in Sources */,
 				52B4B06222B862E0002F92C1 /* ContentView.swift in Sources */,
 				5263877F22F9071D00649336 /* AppState.swift in Sources */,
 				524EEB8C22B9703800CB3DDE /* Todo.swift in Sources */,
@@ -504,6 +578,11 @@
 			isa = PBXTargetDependency;
 			target = 52195923235E8596006E3EA4 /* ComposableArchitecture */;
 			targetProxy = 5284A109238CB7A300C427AB /* PBXContainerItemProxy */;
+		};
+		5291612823C53339001B9911 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5291612123C53339001B9911 /* Prelude */;
+			targetProxy = 5291612723C53339001B9911 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -702,6 +781,64 @@
 			};
 			name = Release;
 		};
+		5291612C23C53339001B9911 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 78NNNKRM7Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Prelude/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "im.k-t.Prelude";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5291612D23C53339001B9911 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 78NNNKRM7Q;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Prelude/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "im.k-t.Prelude";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		52B4B06C22B862E4002F92C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -890,6 +1027,15 @@
 			buildConfigurations = (
 				521A3DD4238CD2E300D4D412 /* Debug */,
 				521A3DD5238CD2E300D4D412 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5291612B23C53339001B9911 /* Build configuration list for PBXNativeTarget "Prelude" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5291612C23C53339001B9911 /* Debug */,
+				5291612D23C53339001B9911 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
