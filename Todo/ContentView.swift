@@ -1,8 +1,8 @@
+import ComposableArchitecture
 import SwiftUI
 import Add
-import ComposableArchitecture
-import Todos
 import Prelude
+import Show
 
 struct ContentView : View {
     @ObservedObject var store: Store<AppState, AppAction>
@@ -11,7 +11,7 @@ struct ContentView : View {
         VStack {
             Add(store: store.view(value: ^\.textInput, action: AppAction.add))
                 .padding(.leading, 20)
-            Todos(store: store.view(value: ^\.todos, action: AppAction.todos))
+            Show(store: store.view(value: ^\.todos, action: AppAction.show))
         }
     }
 }

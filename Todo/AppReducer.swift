@@ -1,6 +1,6 @@
 import ComposableArchitecture
-import Todos
+import Show
 
 let appReducer: (inout AppState, AppAction) -> Void = combine(
-    pullback(todosReducer, value: \.todos, action: \.todos)
+    pullback(showReducer, value: \.todos, action: \.show)
 )

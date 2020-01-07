@@ -1,10 +1,10 @@
 import ComposableArchitecture
 import SwiftUI
 
-public struct Todos: View {
-    @ObservedObject var store: Store<[String], TodosAction>
+public struct Show: View {
+    @ObservedObject var store: Store<[String], ShowAction>
 
-    public init(store: Store<[String], TodosAction>) {
+    public init(store: Store<[String], ShowAction>) {
         self.store = store
     }
 
@@ -16,8 +16,8 @@ public struct Todos: View {
     }
 }
 
-extension Todos {
+extension Show {
     func onDelete(indexSet: IndexSet) {
-        self.store.send(.deleteTodos(indexSet))
+        self.store.send(.delete(indexSet))
     }
 }

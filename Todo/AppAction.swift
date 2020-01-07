@@ -1,9 +1,9 @@
 import Add
-import Todos
+import Show
 
 enum AppAction {
     case add(AddAction)
-    case todos(TodosAction)
+    case show(ShowAction)
 }
 
 extension AppAction {
@@ -23,15 +23,15 @@ extension AppAction {
 }
 
 extension AppAction {
-    var todos: TodosAction? {
+    var show: ShowAction? {
         get {
-            guard case let .todos(action) = self else { return nil }
+            guard case let .show(action) = self else { return nil }
             return action
         }
 
         set {
-            guard case .todos = self, let newValue = newValue else { return }
-            self = .todos(newValue)
+            guard case .show = self, let newValue = newValue else { return }
+            self = .show(newValue)
         }
     }
 }
