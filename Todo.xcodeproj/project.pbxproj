@@ -183,8 +183,8 @@
 			isa = PBXGroup;
 			children = (
 				52195926235E8596006E3EA4 /* ComposableArchitecture.h */,
-				52195927235E8596006E3EA4 /* Info.plist */,
 				52195931235E8630006E3EA4 /* ComposableArchitecture.swift */,
+				52195927235E8596006E3EA4 /* Info.plist */,
 			);
 			path = ComposableArchitecture;
 			sourceTree = "<group>";
@@ -225,12 +225,12 @@
 		52B4B05122B862E0002F92C1 = {
 			isa = PBXGroup;
 			children = (
-				52B4B05C22B862E0002F92C1 /* Todo */,
-				52195925235E8596006E3EA4 /* ComposableArchitecture */,
-				5219593A235E8BD7006E3EA4 /* Todos */,
 				521A3DCB238CD2E300D4D412 /* AddTodo */,
+				52195925235E8596006E3EA4 /* ComposableArchitecture */,
 				5291612323C53339001B9911 /* Prelude */,
 				52B4B05B22B862E0002F92C1 /* Products */,
+				52B4B05C22B862E0002F92C1 /* Todo */,
+				5219593A235E8BD7006E3EA4 /* Todos */,
 			);
 			sourceTree = "<group>";
 		};
