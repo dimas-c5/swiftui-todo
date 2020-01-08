@@ -1,20 +1,34 @@
 import Combine
 
 public final class Store<Value, Action>: ObservableObject {
-    private let reducer: (inout Value, Action) -> Void
+    private let reducer: Reducer<Value, Action>
     @Published public private(set) var value: Value
-    private var cancellable: Cancellable?
+    private var viewCancellable: Cancellable?
+    private var effectCancellables: Set<AnyCancellable> = []
 
-    public init(
-        initialValue: Value,
-        reducer: @escaping (inout Value, Action) -> Void
-    ) {
+    public init(initialValue: Value, reducer: @escaping Reducer<Value, Action>) {
         self.reducer = reducer
         self.value = initialValue
     }
 
     public func send(_ action: Action) {
-        self.reducer(&self.value, action)
+        let effects = self.reducer(&self.value, action)
+
+        effects.forEach { effect in
+            var effectCancellable: AnyCancellable?
+            var didComplete = false
+            effectCancellable = effect.sink(
+                receiveCompletion: { [weak self] _ in
+                    didComplete = true
+                    guard let effectCancellable = effectCancellable else { return }
+                    self?.effectCancellables.remove(effectCancellable)
+                },
+                receiveValue: self.send
+            )
+            if !didComplete, let effectCancellable = effectCancellable {
+                self.effectCancellables.insert(effectCancellable)
+            }
+        }
     }
 
     public func view<LocalValue, LocalAction>(
@@ -26,9 +40,10 @@ public final class Store<Value, Action>: ObservableObject {
             reducer: { localValue, localAction in
                 self.send(toGlobalAction(localAction))
                 localValue = toLocalValue(self.value)
+                return []
         }
         )
-        localStore.cancellable = self.$value.sink { [weak localStore] newValue in
+        localStore.viewCancellable = self.$value.sink { [weak localStore] newValue in
             localStore?.value = toLocalValue(newValue)
         }
         return localStore

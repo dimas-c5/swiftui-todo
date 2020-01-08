@@ -34,6 +34,7 @@
 		5291616223C55A2D001B9911 /* AddReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291616123C55A2D001B9911 /* AddReducer.swift */; };
 		52A4174823C68202006D488A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4174723C68202006D488A /* Store.swift */; };
 		52A4174A23C6846D006D488A /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4174923C6846D006D488A /* Effect.swift */; };
+		52A4174C23C68971006D488A /* Reducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4174B23C68971006D488A /* Reducer.swift */; };
 		52B4B05E22B862E0002F92C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B05D22B862E0002F92C1 /* AppDelegate.swift */; };
 		52B4B06022B862E0002F92C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B05F22B862E0002F92C1 /* SceneDelegate.swift */; };
 		52B4B06222B862E0002F92C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B06122B862E0002F92C1 /* ContentView.swift */; };
@@ -149,6 +150,7 @@
 		5291616123C55A2D001B9911 /* AddReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReducer.swift; sourceTree = "<group>"; };
 		52A4174723C68202006D488A /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		52A4174923C6846D006D488A /* Effect.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Effect.swift; sourceTree = "<group>"; };
+		52A4174B23C68971006D488A /* Reducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reducer.swift; sourceTree = "<group>"; };
 		52B4B05A22B862E0002F92C1 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B4B05D22B862E0002F92C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52B4B05F22B862E0002F92C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -216,6 +218,7 @@
 				52195931235E8630006E3EA4 /* ComposableArchitecture.swift */,
 				52A4174923C6846D006D488A /* Effect.swift */,
 				52195927235E8596006E3EA4 /* Info.plist */,
+				52A4174B23C68971006D488A /* Reducer.swift */,
 				52A4174723C68202006D488A /* Store.swift */,
 			);
 			path = ComposableArchitecture;
@@ -538,6 +541,7 @@
 			files = (
 				52A4174A23C6846D006D488A /* Effect.swift in Sources */,
 				52195932235E8630006E3EA4 /* ComposableArchitecture.swift in Sources */,
+				52A4174C23C68971006D488A /* Reducer.swift in Sources */,
 				52A4174823C68202006D488A /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

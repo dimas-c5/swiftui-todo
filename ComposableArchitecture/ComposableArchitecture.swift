@@ -1,20 +1,28 @@
 public func combine<Value, Action>(
-    _ reducers: (inout Value, Action) -> Void...
-) -> (inout Value, Action) -> Void {
+    _ reducers: Reducer<Value, Action>...
+) -> Reducer<Value, Action> {
     { value, action in
-        for reducer in reducers {
-            reducer(&value, action)
-        }
+        let effects = reducers.flatMap { $0(&value, action) }
+        return effects
     }
 }
 
 public func pullback<LocalValue, GlobalValue, LocalAction, GlobalAction>(
-    _ reducer: @escaping (inout LocalValue, LocalAction) -> Void,
+    _ reducer: @escaping Reducer<LocalValue, LocalAction>,
     value: WritableKeyPath<GlobalValue, LocalValue>,
     action: WritableKeyPath<GlobalAction, LocalAction?>
-) -> (inout GlobalValue, GlobalAction) -> Void {
+) -> Reducer<GlobalValue, GlobalAction> {
     { globalValue, globalAction in
-        guard let localAction = globalAction[keyPath: action] else { return }
-        reducer(&globalValue[keyPath: value], localAction)
+        guard let localAction = globalAction[keyPath: action] else { return [] }
+        let localEffects = reducer(&globalValue[keyPath: value], localAction)
+
+        return localEffects.map { localEffect in
+            localEffect.map { localAction -> GlobalAction in
+                var globalAction = globalAction
+                globalAction[keyPath: action] = localAction
+                return globalAction
+            }
+            .eraseToEffect()
+        }
     }
 }
