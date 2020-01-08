@@ -31,6 +31,7 @@
 		5291615B23C53773001B9911 /* ShowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5B9A223837F7C0030EBAF /* ShowAction.swift */; };
 		5291615C23C53791001B9911 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52195924235E8596006E3EA4 /* ComposableArchitecture.framework */; };
 		5291615D23C53791001B9911 /* ComposableArchitecture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52195924235E8596006E3EA4 /* ComposableArchitecture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5291616223C55A2D001B9911 /* AddReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291616123C55A2D001B9911 /* AddReducer.swift */; };
 		52B4B05E22B862E0002F92C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B05D22B862E0002F92C1 /* AppDelegate.swift */; };
 		52B4B06022B862E0002F92C1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B05F22B862E0002F92C1 /* SceneDelegate.swift */; };
 		52B4B06222B862E0002F92C1 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B4B06122B862E0002F92C1 /* ContentView.swift */; };
@@ -143,6 +144,7 @@
 		5291614D23C5375B001B9911 /* Show.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Show.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5291614F23C5375B001B9911 /* Show.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Show.h; sourceTree = "<group>"; };
 		5291615023C5375B001B9911 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5291616123C55A2D001B9911 /* AddReducer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddReducer.swift; sourceTree = "<group>"; };
 		52B4B05A22B862E0002F92C1 /* Todo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Todo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		52B4B05D22B862E0002F92C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		52B4B05F22B862E0002F92C1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -229,6 +231,7 @@
 				5291613623C53478001B9911 /* Add.h */,
 				521A3DD8238CD31800D4D412 /* Add.swift */,
 				521A3DDA238CD33700D4D412 /* AddAction.swift */,
+				5291616123C55A2D001B9911 /* AddReducer.swift */,
 				5291613723C53478001B9911 /* Info.plist */,
 			);
 			path = Add;
@@ -545,6 +548,7 @@
 			files = (
 				5291614023C53491001B9911 /* Add.swift in Sources */,
 				5291614123C53491001B9911 /* AddAction.swift in Sources */,
+				5291616223C55A2D001B9911 /* AddReducer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
