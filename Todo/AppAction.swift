@@ -1,8 +1,10 @@
 import Add
+import Manage
 import Show
 
 enum AppAction {
     case add(AddAction)
+    case manage(ManageAction)
     case show(ShowAction)
 }
 
@@ -16,6 +18,20 @@ extension AppAction {
         set {
             guard case .add = self, let newValue = newValue else { return }
             self = .add(newValue)
+        }
+    }
+}
+
+extension AppAction {
+    var manage: ManageAction? {
+        get {
+            guard case let .manage(action) = self else { return nil }
+            return action
+        }
+
+        set {
+            guard case .manage = self, let newValue = newValue else { return }
+            self = .manage(newValue)
         }
     }
 }
