@@ -1,8 +1,8 @@
 import ComposableArchitecture
 
-struct FileClient {
-    var load: (String) -> Effect<Data?>
-    var save: (String, Data) -> Effect<Never>
+public struct FileClient {
+    public var load: (String) -> Effect<Data?>
+    public var save: (String, Data) -> Effect<Never>
 }
 
 extension FileClient {
@@ -14,7 +14,7 @@ extension FileClient {
 }
 
 extension FileClient {
-    static let live = FileClient(
+    public static let live = FileClient(
         load: { fileName in
             .sync {
                 try? .init(contentsOf: Self.url(fileName))

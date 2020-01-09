@@ -1,7 +1,13 @@
 import Manage
 
 struct AppState {
-    var manageViewState: ManageViewState = .init()
     var textInput: String = ""
     var todos: [String] = []
+}
+
+extension AppState {
+    var manageView: ManageViewState {
+        get { .init(todos: todos) }
+        set { todos = newValue.todos }
+    }
 }
