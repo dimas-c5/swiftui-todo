@@ -13,5 +13,5 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build and Test
-      run: xcodebuild clean build-for-testing -project Todo.xcodeproj -scheme Todo -destination "${matrix.destination}"
+      run: xcodebuild clean build-for-testing -project Todo.xcodeproj -scheme Todo -destination "${{ matrix.destination }}"
 
