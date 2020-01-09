@@ -1,0 +1,14 @@
+name: iOS CI
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+
+    steps:
+    - uses: actions/checkout@v1
+    - name: Build and Test
+      run: xcodebuild clean build-for-testing -project Todo.xcodeproj -scheme Todo -destination "platform=iOS Simulator,name=iPhone 11 Pro"
+
