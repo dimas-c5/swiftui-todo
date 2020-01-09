@@ -4,9 +4,7 @@ import Prelude
 
 public func manageReducer(state: inout ManageViewState, action: ManageAction) -> [Effect<ManageAction>] {
     switch action {
-    case let .loaded(todos):
-        state.todos = todos
-    case .loadTapped:
+    case .load:
         return [
             Current.fileClient
                 .load(state.fileName)
@@ -16,7 +14,9 @@ public func manageReducer(state: inout ManageViewState, action: ManageAction) ->
                 .map(ManageAction.loaded)
                 .eraseToEffect()
         ]
-    case .saveTapped:
+    case let .loaded(todos):
+        state.todos = todos
+    case .save:
         return [
             Current.fileClient
                 .save(state.fileName, try! JSONEncoder().encode(state.todos))

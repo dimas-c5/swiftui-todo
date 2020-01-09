@@ -1,5 +1,5 @@
-public enum ManageAction {
+public enum ManageAction: Equatable {
     case loaded([String])
-    case loadTapped
-    case saveTapped
+    case load
+    case save
 }

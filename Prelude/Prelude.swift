@@ -8,6 +8,10 @@
     { _ in a }
 }
 
+@inline(__always) public func const<A, B, C>(_ a: A) -> (B, C) -> A {
+    { _,_ in a }
+}
+
 // MARK: - Zip
 public func zip<A, B>(_ a: A) -> (B) -> (A, B) {
     { b in (a, b) }
