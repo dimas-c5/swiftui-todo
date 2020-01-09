@@ -95,3 +95,6 @@ public func flip <A, B, C>(_ f: @escaping (A) -> (B) -> C) -> (B) -> (A) -> C {
 public func compose<A, B, C>(_ f: @escaping (B) -> C, _ g: @escaping (A) -> B) -> (A) -> C {
     { a in f(g(a)) }
 }
+
+// MARK: - Absurd
+public func absurd<A>(_ never: Never) -> A {}
