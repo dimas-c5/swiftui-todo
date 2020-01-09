@@ -10,7 +10,7 @@ public struct Show: View {
 
     public var body: some View {
         List {
-            ForEach(self.store.value, id: \.self, content: Text.init)
+            ForEach(store.value, id: \.self, content: Text.init)
                 .onDelete(perform: onDelete)
         }
     }
@@ -18,6 +18,6 @@ public struct Show: View {
 
 extension Show {
     func onDelete(indexSet: IndexSet) {
-        self.store.send(.delete(indexSet))
+        store.send(.delete(indexSet))
     }
 }

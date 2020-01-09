@@ -12,7 +12,7 @@ public final class Store<Value, Action>: ObservableObject {
     }
 
     public func send(_ action: Action) {
-        let effects = self.reducer(&self.value, action)
+        let effects = reducer(&self.value, action)
 
         effects.forEach { effect in
             var effectCancellable: AnyCancellable?
@@ -26,7 +26,7 @@ public final class Store<Value, Action>: ObservableObject {
                 receiveValue: self.send
             )
             if !didComplete, let effectCancellable = effectCancellable {
-                self.effectCancellables.insert(effectCancellable)
+                effectCancellables.insert(effectCancellable)
             }
         }
     }
