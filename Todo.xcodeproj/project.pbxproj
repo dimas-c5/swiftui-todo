@@ -39,7 +39,6 @@
 		5291614023C53491001B9911 /* Add.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A3DD8238CD31800D4D412 /* Add.swift */; };
 		5291614123C53491001B9911 /* AddAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 521A3DDA238CD33700D4D412 /* AddAction.swift */; };
 		5291614323C5350A001B9911 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52195924235E8596006E3EA4 /* ComposableArchitecture.framework */; };
-		5291614423C5350A001B9911 /* ComposableArchitecture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52195924235E8596006E3EA4 /* ComposableArchitecture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5291615123C5375B001B9911 /* Show.h in Headers */ = {isa = PBXBuildFile; fileRef = 5291614F23C5375B001B9911 /* Show.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5291615423C5375B001B9911 /* Show.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5291614D23C5375B001B9911 /* Show.framework */; };
 		5291615523C5375B001B9911 /* Show.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5291614D23C5375B001B9911 /* Show.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
@@ -47,7 +46,6 @@
 		5291615A23C53773001B9911 /* Show.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52195945235E8BEB006E3EA4 /* Show.swift */; };
 		5291615B23C53773001B9911 /* ShowAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D5B9A223837F7C0030EBAF /* ShowAction.swift */; };
 		5291615C23C53791001B9911 /* ComposableArchitecture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52195924235E8596006E3EA4 /* ComposableArchitecture.framework */; };
-		5291615D23C53791001B9911 /* ComposableArchitecture.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 52195924235E8596006E3EA4 /* ComposableArchitecture.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		5291616223C55A2D001B9911 /* AddReducer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5291616123C55A2D001B9911 /* AddReducer.swift */; };
 		52A4174823C68202006D488A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4174723C68202006D488A /* Store.swift */; };
 		52A4174A23C6846D006D488A /* Effect.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52A4174923C6846D006D488A /* Effect.swift */; };
@@ -78,6 +76,34 @@
 			remoteInfo = Manage;
 		};
 		52605E3C23C79BE40023AA56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52605E3623C79BE40023AA56;
+			remoteInfo = Services;
+		};
+		52605E4F23C7A1880023AA56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52195923235E8596006E3EA4;
+			remoteInfo = ComposableArchitecture;
+		};
+		52605E5B23C7A6BD0023AA56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5291612123C53339001B9911;
+			remoteInfo = Prelude;
+		};
+		52605E6023C7A6D80023AA56 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52195923235E8596006E3EA4;
+			remoteInfo = ComposableArchitecture;
+		};
+		52605E6523C7A6E90023AA56 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 52B4B05222B862E0002F92C1 /* Project object */;
 			proxyType = 1;
@@ -134,28 +160,6 @@
 				5291612A23C53339001B9911 /* Prelude.framework in Embed Frameworks */,
 				52605E3F23C79BE40023AA56 /* Services.framework in Embed Frameworks */,
 				5219592C235E8596006E3EA4 /* ComposableArchitecture.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5291614723C5350A001B9911 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5291614423C5350A001B9911 /* ComposableArchitecture.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5291616023C53791001B9911 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				5291615D23C53791001B9911 /* ComposableArchitecture.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -217,6 +221,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52605E5923C7A6BD0023AA56 /* Prelude.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -224,6 +229,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52605E6323C7A6E90023AA56 /* Services.framework in Frameworks */,
+				52605E4D23C7A1880023AA56 /* ComposableArchitecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -231,6 +238,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52605E5E23C7A6D80023AA56 /* ComposableArchitecture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,6 +319,13 @@
 			path = Services;
 			sourceTree = "<group>";
 		};
+		52605E4723C7A1170023AA56 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5291612323C53339001B9911 /* Prelude */ = {
 			isa = PBXGroup;
 			children = (
@@ -356,6 +371,7 @@
 				52605E3823C79BE40023AA56 /* Services */,
 				5291614E23C5375B001B9911 /* Show */,
 				52B4B05C22B862E0002F92C1 /* Todo */,
+				52605E4723C7A1170023AA56 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -464,6 +480,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				52605E5C23C7A6BD0023AA56 /* PBXTargetDependency */,
 			);
 			name = ComposableArchitecture;
 			productName = ComposableArchitecture;
@@ -482,6 +499,8 @@
 			buildRules = (
 			);
 			dependencies = (
+				52605E5023C7A1880023AA56 /* PBXTargetDependency */,
+				52605E6623C7A6E90023AA56 /* PBXTargetDependency */,
 			);
 			name = Manage;
 			productName = Manage;
@@ -500,6 +519,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				52605E6123C7A6D80023AA56 /* PBXTargetDependency */,
 			);
 			name = Services;
 			productName = Services;
@@ -532,7 +552,6 @@
 				5291613023C53478001B9911 /* Sources */,
 				5291613123C53478001B9911 /* Frameworks */,
 				5291613223C53478001B9911 /* Resources */,
-				5291614723C5350A001B9911 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -552,7 +571,6 @@
 				5291614923C5375B001B9911 /* Sources */,
 				5291614A23C5375B001B9911 /* Frameworks */,
 				5291614B23C5375B001B9911 /* Resources */,
-				5291616023C53791001B9911 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -794,6 +812,26 @@
 			isa = PBXTargetDependency;
 			target = 52605E3623C79BE40023AA56 /* Services */;
 			targetProxy = 52605E3C23C79BE40023AA56 /* PBXContainerItemProxy */;
+		};
+		52605E5023C7A1880023AA56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52195923235E8596006E3EA4 /* ComposableArchitecture */;
+			targetProxy = 52605E4F23C7A1880023AA56 /* PBXContainerItemProxy */;
+		};
+		52605E5C23C7A6BD0023AA56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5291612123C53339001B9911 /* Prelude */;
+			targetProxy = 52605E5B23C7A6BD0023AA56 /* PBXContainerItemProxy */;
+		};
+		52605E6123C7A6D80023AA56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52195923235E8596006E3EA4 /* ComposableArchitecture */;
+			targetProxy = 52605E6023C7A6D80023AA56 /* PBXContainerItemProxy */;
+		};
+		52605E6623C7A6E90023AA56 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52605E3623C79BE40023AA56 /* Services */;
+			targetProxy = 52605E6523C7A6E90023AA56 /* PBXContainerItemProxy */;
 		};
 		5291612823C53339001B9911 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
