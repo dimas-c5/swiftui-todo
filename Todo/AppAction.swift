@@ -9,9 +9,7 @@ enum AppAction {
 extension AppAction {
     var add: AddAction? {
         get {
-            guard case let .add(action) = self else {
-                return nil
-            }
+            guard case let .add(action) = self else { return nil }
             return action
         }
 

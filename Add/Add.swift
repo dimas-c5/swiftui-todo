@@ -1,5 +1,6 @@
-import ComposableArchitecture
 import SwiftUI
+import ComposableArchitecture
+import Prelude
 
 public struct Add: View {
     @State var textInput = ""
@@ -10,12 +11,12 @@ public struct Add: View {
     }
 
     public var body: some View {
-        TextField("Add a todo", text: $textInput, onEditingChanged: {_ in}, onCommit: onCommit)
+        TextField("Add a todo", text: $textInput, onEditingChanged: const(()), onCommit: onCommit)
     }
 }
 
 extension Add {
-    func onCommit() -> Void {
+    func onCommit() {
         store.send(.add(textInput))
         textInput = ""
     }
