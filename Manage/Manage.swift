@@ -10,9 +10,9 @@ public struct Manage: View {
 
     public var body: some View {
         HStack {
-            Button("Load") { self.store.send(.loadTapped) }
+            Button("Load") { self.store.send(.load) }
             Spacer()
-            Button("Save") { self.store.send(.saveTapped) }
+            Button("Save") { self.store.send(.save) }
         }
         .padding(.leading, 20)
         .padding(.trailing, 20)
